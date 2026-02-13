@@ -1,0 +1,132 @@
+.contact-me {
+  display: flex;
+  background-color: #121212;
+  justify-content: space-around;
+  color: white;
+  flex-wrap: wrap; 
+  padding: 40px 20px;
+}
+
+.socailmedia img {
+  width: 50px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition:all 0.4s ease-in-out;
+}
+
+
+.contact-form {
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 16px;
+  color: white;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 18px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #7C3AED; 
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5B21B6;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 20px auto;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-info i {
+  color: red;
+  width: 40px;
+}
+
+.socailmedia img:hover{
+  transform: translateY(-7px);
+}
+@media (max-width: 768px) {
+  .contact-me {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 90%;
+    
+  }
+}
+
+/* Phones: 480px and below */
+@media (max-width: 480px) {
+  .contact-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .contact-form h3 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Inter';
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+   color: inherit;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease forwards;
+}
+.fade-in-component{
+  animation: fadeInUp 3s ease-in-out;
+}
