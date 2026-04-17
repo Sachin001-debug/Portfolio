@@ -195,7 +195,7 @@ html {
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -204,5 +204,5 @@ html {
 }
 
 .fade-in {
-  animation: fadeInAnimation 1.4s ease-out forwards;
+  animation: fadeInAnimation 2.5s ease-out forwards;
 }
