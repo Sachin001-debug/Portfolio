@@ -80,7 +80,7 @@ const Footer = () => {
             <p className="text-white/60 text-sm leading-relaxed">
               Passionate full-stack developer and UI/UX designer crafting clean,
               minimal, and high-performance digital experiences. Based in
-              Kathmandu.
+              Butwal.
             </p>
 
             <div className="mt-4 text-xs text-white/40">
