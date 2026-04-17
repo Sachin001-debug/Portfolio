@@ -2,7 +2,7 @@ import React from "react";
 import HeroImg from "../assets/WhatsApp Image 2026-03-29 at 6.11.53 PM.jpeg";
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] flex items-start pt-9  hero-bg">
+    <section className="min-h-[85dvh] flex items-start pt-9  hero-bg">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE */}
         <div className="fade-in space-y-4 md:space-y-7 lg:space-y-10">
