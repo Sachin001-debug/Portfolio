@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --accent-color: #00f5d4;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', system_ui, sans-serif;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Link Underline Animation */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Project Card Hover Effects */
+.project-card {
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.project-card:hover {
+  box-shadow: 0 30px 60px -15px rgba(0, 245, 212, 0.15);
+}
+
+/* Tech Logo Hover */
+.tech-logo {
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.tech-logo:hover {
+  transform: scale(1.12) rotate(6deg);
+  filter: brightness(1.15);
+}
+
+/* Hero Background Gradient */
+.hero-bg {
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(0, 245, 212, 0.12) 0%,
+    transparent 60%
+  );
+}
+
+/*project gradient*/
+.project-bg {
+    background: radial-gradient(
+    circle at 50% 30%,
+    rgba(0, 245, 212, 0.12) 0%,
+    transparent 95%
+  );
+}
+
+/* Scroll Progress Bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to right, #00f5d4, #00d4b8);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Form Input Focus Effects */
+.form-input {
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #00f5d4;
+  box-shadow: 0 0 0 4px rgba(0, 245, 212, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Blog Card Hover */
+.blog-card {
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.blog-card:hover {
+  border-color: rgba(0, 245, 212, 0.3);
+  transform: translateY(-8px);
+}
+
+/* Toast Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f5d4;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4b8;
+}
+
+/* Section Header Accent Line */
+.section-header {
+  position: relative;
+  display: inline-block;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 9999px;
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Hover Scale */
+.btn-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.btn-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #ffffff, #00f5d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*for fade in animation*/
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInAnimation 1.4s ease-out forwards;
+}
