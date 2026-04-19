@@ -1,7 +1,7 @@
 const Blogs = () => {
   const blogs = [
     {
-      title: "How I built a production-ready design system in 7 days using Tailwind + Radix",
+      title: "How I built a production-ready design system in 7 days using Tailwind",
       excerpt: "Lessons learned while scaling UI consistency across multiple products at my latest startup.",
       date: "March 28, 2026",
       category: "DESIGN SYSTEMS",
