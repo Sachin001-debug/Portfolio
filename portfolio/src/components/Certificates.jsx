@@ -54,7 +54,7 @@ const Certificates = () => {
 
               {/* Meta Info */}
               <div className="flex items-center justify-between text-sm text-white/50 mb-8">
-                <span className="text-purple-800">{cert.date}</span>
+                <span className="text-purple-400">{cert.date}</span>
                 <span className="text-purple-400">{cert.duration}</span>
               </div>
 
