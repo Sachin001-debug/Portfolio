@@ -28,9 +28,6 @@ const Blogs = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <h2 className="text-5xl font-semibold tracking-tighter">Latest Writings</h2>
-          <a href="#" className="text-[#00f5d4] flex items-center gap-2 hover:gap-3 transition-all text-sm font-medium">
-            View all articles <span>→</span>
-          </a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
