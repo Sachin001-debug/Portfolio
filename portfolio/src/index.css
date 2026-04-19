@@ -204,5 +204,5 @@ html {
 }
 
 .fade-in {
-  animation: fadeInAnimation 2.5s ease-out forwards;
+  animation: fadeInAnimation 2s ease-out forwards;
 }
