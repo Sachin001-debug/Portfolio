@@ -10,7 +10,7 @@ const Projects = () => {
       image: Ecommerce,
       tech: ["React", "Node.js", "MongoDB", "Express"],
       live: "#",
-      github: "#"
+      github: "https://github.com/Sachin001-debug/E-com_Platform"
     },
     {
       title: "Job Portal (HireNepal)",
@@ -18,7 +18,7 @@ const Projects = () => {
       image: Jobportal,
       tech: ["React.js", "Tailwind", "MongoDB", "Express"],
       live: "#",
-      github: "#"
+      github: "https://github.com/Sachin001-debug/Job-Portal"
     },
     {
       title: "Task Manager",
@@ -26,7 +26,7 @@ const Projects = () => {
       image: Taskmanager,
       tech: ["React.js", "MongoDB"],
       live: "#",
-      github: "#"
+      github: "https://github.com/Sachin001-debug/Task_Manager"
     }
   ];
 
