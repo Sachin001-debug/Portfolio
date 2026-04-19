@@ -5,7 +5,7 @@ const Certificates = () => {
     {
       title: "MERN Stack Development",
       platform: "Udemy",
-      desc: "Completed a comprehensive full-stack MERN course covering MongoDB, Express.js, React, and Node.js with real-world projects.",
+      desc: "Completed a comprehensive full-stack MERN course covering MongoDB, Express.js, React, and Node.js with multiple real-world projects.",
       link: "https://www.udemy.com/certificate/UC-7e40c35b-7ed2-43fa-a588-aa1d93854d36/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
       date: "13 April 2025",
       duration: "19 Total hours",
@@ -21,7 +21,7 @@ const Certificates = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-zinc-950 to-black">
+    <section className="py-14 bg-gradient-to-b from-zinc-950 to-black">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex items-end justify-between mb-16">
@@ -29,7 +29,6 @@ const Certificates = () => {
             <h2 className="text-5xl md:text-6xl font-semibold tracking-tighter mb-3">
               Certificates
             </h2>
-  
           </div>
         </div>
 
@@ -41,7 +40,7 @@ const Certificates = () => {
               className="group bg-zinc-900/50 border border-white/10 rounded-3xl p-8 hover:border-white/30 hover:bg-zinc-900/70 transition-all duration-300 flex flex-col"
             >
               {/* Platform Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 rounded-full w-fit text-xs tracking-widest text-white/60 mb-6">
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-400/10 border border-emerald-500/20 rounded-2xl w-fit text-xs font-medium tracking-widest text-emerald-400 mb-6 hover:border-emerald-400/40 transition-colors">
                 {cert.platform.toUpperCase()}
               </div>
 
@@ -55,8 +54,8 @@ const Certificates = () => {
 
               {/* Meta Info */}
               <div className="flex items-center justify-between text-sm text-white/50 mb-8">
-                <span>{cert.date}</span>
-                <span>{cert.duration}</span>
+                <span className="text-purple-800">{cert.date}</span>
+                <span className="text-purple-400">{cert.duration}</span>
               </div>
 
               {/* View Button */}
