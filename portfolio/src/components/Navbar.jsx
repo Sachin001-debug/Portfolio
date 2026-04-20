@@ -13,10 +13,6 @@ const Navbar = ({ activeSection }) => {
     { href: '#contact', label: 'Contact' },
   ];
 
-  const downloadCV = () => {
-    alert("CV downloaded! (Demo - In real app, link to actual PDF)");
-  };
-
   return (
     <nav className="fade-in sticky top-0 z-50 bg-[#050505]/95 backdrop-blur-xl border-b border-white/10">
       
@@ -48,10 +44,14 @@ const Navbar = ({ activeSection }) => {
         <div className="flex items-center gap-4">
 
           {/* Desktop CV Button */}
-          <button className="hidden md:flex items-center gap-2 px-3 py-2 border border-[#00f5d4] text-[#00f5d4] hover:bg-[#00f5d4] hover:text-black rounded-3xl font-semibold transition-all">
+          <a 
+            href="/Sachin-Kharel-Resume.pdf"
+            download="Sachin-Kharel-Resume.pdf"
+            className="hidden md:flex items-center gap-2 px-3 py-2 border border-[#00f5d4] text-[#00f5d4] hover:bg-[#00f5d4] hover:text-black rounded-3xl font-semibold transition-all"
+          >
             <Download size={18} />
             Download CV
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -80,13 +80,16 @@ const Navbar = ({ activeSection }) => {
               </a>
             ))}
 
-            <button
-              onClick={downloadCV}
+            {/* Mobile Download CV Button */}
+            <a 
+              href="/Sachin-Kharel-Resume.pdf"
+              download="Sachin-Kharel-Resume.pdf"
+              onClick={() => setIsMobileOpen(false)}
               className="mt-4 w-full flex items-center justify-center gap-2 py-4 border border-[#00f5d4] text-[#00f5d4] rounded-3xl font-semibold hover:bg-[#00f5d4] hover:text-black transition"
             >
               <Download size={18} />
               Download CV
-            </button>
+            </a>
 
           </div>
         </div>
