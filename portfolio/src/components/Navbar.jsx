@@ -23,7 +23,6 @@ const Navbar = ({ activeSection }) => {
           <img src={text} alt="Sachin" className="w-[90px] h-14 object-contain" />
         </div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-10 text-sm font-medium">
           {navLinks.map((link) => (
             <a
@@ -47,7 +46,7 @@ const Navbar = ({ activeSection }) => {
           <a 
             href="/Sachin-Kharel-Resume.pdf"
             download="Sachin-Kharel-Resume.pdf"
-            className="hidden md:flex items-center gap-2 px-3 py-2 border border-[#00f5d4] text-[#00f5d4] hover:bg-[#00f5d4] hover:text-black rounded-3xl font-semibold transition-all"
+            className="hidden md:flex items-center gap-2 px-3 py-2 border border-[#00f5d4] text-[#00f5d4] rounded-3xl font-semibold"
           >
             <Download size={18} />
             Download CV
@@ -85,7 +84,7 @@ const Navbar = ({ activeSection }) => {
               href="/Sachin-Kharel-Resume.pdf"
               download="Sachin-Kharel-Resume.pdf"
               onClick={() => setIsMobileOpen(false)}
-              className="mt-4 w-full flex items-center justify-center gap-2 py-4 border border-[#00f5d4] text-[#00f5d4] rounded-3xl font-semibold hover:bg-[#00f5d4] hover:text-black transition"
+              className="mt-4 w-full flex items-center justify-center gap-2 py-4 border border-[#00f5d4] text-[#00f5d4] rounded-3xl font-semibold  "
             >
               <Download size={18} />
               Download CV

@@ -102,7 +102,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-[#00f5d4] text-black font-semibold rounded-xl text-sm hover:bg-white transition flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-[#00f5d4] text-black font-semibold rounded-xl text-sm flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>Sending...</>

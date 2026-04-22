@@ -63,12 +63,12 @@ const Certificates = () => {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl border border-white/20 hover:border-white hover:bg-white hover:text-black transition-all duration-300 font-medium group-hover:scale-[1.02]"
+                className="mt-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl border border-white/20  font-medium "
               >
                 View Certificate
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
+                  className="w-4 h-4 transition-transform"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

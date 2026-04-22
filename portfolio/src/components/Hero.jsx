@@ -13,7 +13,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-semibold tracking-tight leading-tight">
-            Hi, I'm <span className="text-[#00f5d4]">Sachin</span>.
+            Hi, I'm <span className="text-[#00f5d4]">Sachin</span>
           </h1>
 
           {/* Title */}
@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 pt-6">
             <a
               href="#projects"
-              className="px-4 py-2 md:px-8 md:py-4 xl:px-1 xl:py-1 bg-[#00f5d4] hover:bg-white text-black font-semibold rounded-3xl flex items-center gap-3 transition-all  text-sm md:text-base"
+              className="px-4 py-2 md:px-8 md:py-4 xl:px-1 xl:py-1 bg-[#00f5d4] text-black font-semibold rounded-3xl flex items-center gap-3 transition-all  text-sm md:text-base"
             >
               View My Work
               <span>→</span>
@@ -58,7 +58,7 @@ const Hero = () => {
             {/* Image */}
             <div
               className="relative w-72 h-72 md:w-[340px] md:h-[340px] lg:w-[380px] lg:h-[380px] xl:w-[420px] xl:h-[420px] 
-                            rounded-[2.5rem] overflow-hidden border-4 border-[#00f5d4]/30 shadow-2xl"
+                            rounded-[2.5rem] overflow-hidden border-3 border-[#00f5d4]/30 shadow-2xl"
               style={{
                 borderRadius: "77% 23% 87% 13% / 30% 71% 29% 70% ",
               }}
